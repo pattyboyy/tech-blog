@@ -124,3 +124,175 @@
 
 # 2024-06-11 01:21:37.204074
 +commit and save
+
+# 2024-06-11 01:29:01.178072
++==> It looks like we don't have access to your repo, but we'll try to clone it anyway.
++==> Cloning from https://github.com/pattyboyy/tech-blog
++==> Checking out commit 79470741c75d5c11156ce109419d9245a2c85f41 in branch main
++==> Downloading cache...
++==> Using Node version 20.12.2 (default)
++==> Docs on specifying a Node version: https://render.com/docs/node-version
++==> Using Bun version 1.1.0 (default)
++==> Docs on specifying a bun version: https://render.com/docs/bun-version
++==> Running build command 'npm install'...
++up to date, audited 212 packages in 1s
++21 packages are looking for funding
++  run `npm fund` for details
++4 vulnerabilities (3 moderate, 1 critical)
++To address issues that do not require attention, run:
++  npm audit fix
++To address all issues (including breaking changes), run:
++  npm audit fix --force
++Run `npm audit` for details.
++==> Uploading build...
++==> Transferred 52MB in 8s. Extraction took 2s.
++==> Build uploaded in 8s
++==> Build successful 🎉
++==> Deploying...
++==> Using Node version 20.12.2 (default)
++==> Docs on specifying a Node version: https://render.com/docs/node-version
++==> Using Bun version 1.1.0 (default)
++==> Docs on specifying a bun version: https://render.com/docs/bun-version
++==> Running 'npm start'
++> cms-style-blog@1.0.0 start
++> node server.js
++/opt/render/project/src/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133
++                reject(new sequelizeErrors.ConnectionRefusedError(err));
++                       ^
++ConnectionRefusedError [SequelizeConnectionRefusedError]
++    at Client._connectionCallback (/opt/render/project/src/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)
++    at Client._handleErrorWhileConnecting (/opt/render/project/src/node_modules/pg/lib/client.js:327:19)
++    at Client._handleErrorEvent (/opt/render/project/src/node_modules/pg/lib/client.js:337:19)
++    at Connection.emit (node:events:518:28)
++    at Socket.reportStreamError (/opt/render/project/src/node_modules/pg/lib/connection.js:58:12)
++    at Socket.emit (node:events:518:28)
++    at emitErrorNT (node:internal/streams/destroy:169:8)
++    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
++    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
++  parent: AggregateError [ECONNREFUSED]: 
++      at internalConnectMultiple (node:net:1116:18)
++      at afterConnectMultiple (node:net:1683:7) {
++    code: 'ECONNREFUSED',
++    [errors]: [
++      Error: connect ECONNREFUSED ::1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '::1',
++        port: 5432
++      },
++      Error: connect ECONNREFUSED 127.0.0.1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '127.0.0.1',
++        port: 5432
++      }
++    ]
++  },
++  original: AggregateError [ECONNREFUSED]: 
++      at internalConnectMultiple (node:net:1116:18)
++      at afterConnectMultiple (node:net:1683:7) {
++    code: 'ECONNREFUSED',
++    [errors]: [
++      Error: connect ECONNREFUSED ::1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '::1',
++        port: 5432
++      },
++      Error: connect ECONNREFUSED 127.0.0.1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '127.0.0.1',
++        port: 5432
++      }
++    ]
++  }
++}
++Node.js v20.12.2
++==> Common ways to troubleshoot your deploy: https://docs.render.com/troubleshooting-deploys
++==> Using Node version 20.12.2 (default)
++==> Docs on specifying a Node version: https://render.com/docs/node-version
++==> Using Bun version 1.1.0 (default)
++==> Docs on specifying a bun version: https://render.com/docs/bun-version
++==> Running 'npm start'
++> cms-style-blog@1.0.0 start
++> node server.js
++/opt/render/project/src/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133
++                reject(new sequelizeErrors.ConnectionRefusedError(err));
++                       ^
++ConnectionRefusedError [SequelizeConnectionRefusedError]
++    at Client._connectionCallback (/opt/render/project/src/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)
++    at Client._handleErrorWhileConnecting (/opt/render/project/src/node_modules/pg/lib/client.js:327:19)
++    at Client._handleErrorEvent (/opt/render/project/src/node_modules/pg/lib/client.js:337:19)
++    at Connection.emit (node:events:518:28)
++    at Socket.reportStreamError (/opt/render/project/src/node_modules/pg/lib/connection.js:58:12)
++    at Socket.emit (node:events:518:28)
++    at emitErrorNT (node:internal/streams/destroy:169:8)
++    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
++    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
++  parent: AggregateError [ECONNREFUSED]: 
++      at internalConnectMultiple (node:net:1116:18)
++      at afterConnectMultiple (node:net:1683:7) {
++    code: 'ECONNREFUSED',
++    [errors]: [
++      Error: connect ECONNREFUSED ::1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '::1',
++        port: 5432
++      },
++      Error: connect ECONNREFUSED 127.0.0.1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '127.0.0.1',
++        port: 5432
++      }
++    ]
++  },
++  original: AggregateError [ECONNREFUSED]: 
++      at internalConnectMultiple (node:net:1116:18)
++      at afterConnectMultiple (node:net:1683:7) {
++    code: 'ECONNREFUSED',
++    [errors]: [
++      Error: connect ECONNREFUSED ::1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '::1',
++        port: 5432
++      },
++      Error: connect ECONNREFUSED 127.0.0.1:5432
++          at createConnectionError (node:net:1646:14)
++          at afterConnectMultiple (node:net:1676:16) {
++        errno: -111,
++        code: 'ECONNREFUSED',
++        syscall: 'connect',
++        address: '127.0.0.1',
++        port: 5432
++      }
++    ]
++  }
++
+
+# 2024-06-11 01:31:56.551453
++commit and push
